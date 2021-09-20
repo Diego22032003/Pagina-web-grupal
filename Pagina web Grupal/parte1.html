@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body{
+        background-image: url(papel.jpg);
+        background-size: 100%;
+        font-size: large;
+    }
+</style>
+<body>
+<h1>La Historia de la Segunda Guerra Mundial</h1>
+
+<p> La Segunda Guerra Mundial (1939 - 1945) Fue un conflicto que estallo en Europa, el año de 1939, entre la coalición
+    denominada EJE (formada por Alemania (Tercer Reich), Italia y el Imperio del Japón) y las potencias ALIADOS,
+    constituidas por Francia, Gran Bretaña y URSS (antiguo imperio Ruso).</p>
+<p>
+    las causas de esta guerra fueron que en el afán de revancaha de los alemanes y el resurgimiento de
+    Alemania como gran potencia economica militar
+    La politica de expansion territorial iniciada por el tercer Reich, durante la Alemania Nazi de Adolf Hithler, jefe
+    del partido NAzi, que se adueño del poder en 1933
+</p>
+<p>
+    Por obra del Nazismo, Alemania, reclamo "el espacio vital" (en alemán Lebensraum) para su pueblo y la devolución de
+    sus colonias. Para ello comenzó por hacerse del mejor ejercito del mundo, y luego inicio su política de expansión
+    anexando Austria y Checoslovaquia, parte de Polonia y Danzing. En adelante, Adolf Hitler concibió el plan de someter
+    a Europa y dominar el mundo a base de una "Gran Alemania".
+
+</p>
+<img  src="guerra mundial.jpg">
+
+<h2>Consucuencias de la Segunda Guerra Mundial</h2>
+<ul>
+    <li>Alemania perdio gran parte de su teritorio</li>
+    <li>Terminaron creándose instituciones ideadas para evitar que pudieran surgir nuevos crímenes contra la humanidad
+    </li>
+    <li>Entre las principales consecuencias encontramos las siguientes. 1. Pérdidas humanas</li>
+    <li>Repercusiones económicas y reconstrucción.</li>
+    <li> En Segunda Guerra Mundial durante esta se inventaría la máquina de Turing con el fin de poder decodificar los
+        códigos que
+        empleaban los nazis
+    </li>
+    <li>Conflictos que no se habían resuelto en la Primera Guerra Mundial o cuya resolución había dejado gran
+        insatisfacción
+    </li>
+</ul>
+
+
+<a href="parte2.html" target="_self">Enlace a la siguienta pestaña 2</a>
+
+
+<script>
+    var message="Bienvenid@ a Nuestra Pagina Web  "
+
+    function hora() {
+    var DateString=(new Date()).toString();
+    self.status=DateString.substring(0,3+DateString.lastIndexOf(':'))+
+    "Cualquier mensaje";
+    setTimeout("hora()",200);}
+    hora()
+
+    var ran
+    ran = Math.round(Math.random()*50000)
+    document.write("Usted es el visitante " + ran + " de esta página.");
+   
+    document.body.oncopy = function() {
+    alert('Todos los derechos reservados.');
+    return false;};
+
+
+</script>
+
+</body>
+</html>

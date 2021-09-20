@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body{
+        background-image: url(papel.jpg);
+        background-size: 100%;
+        font-size: large;
+    }
+</style>
+</style>
+<body>
+    <h1>Preguntas y Respuestas</h1>
+    <form>
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" name="usuario" id="usuario"><br>
+        <label for="clave">Contraseña</label><br>
+        <input type="password" name="clave" id="clave" maxlength="6" required><br>
+        <input type="hidden" name="fecha" id="fecha" value="2021-03-10">
+     <label for="email">Email:</label>
+     <input type="email" name="email" id="email" placeholder="correo@ejemplo.com"><br>
+     <label for=”nombre”>Escriba su consulta</label>
+     <input type=”text” name=”nombre” id=”nombre”>
+     
+    <label for="archivo">Elija el archivo</label>    
+    <label for="foto">Seleccione su archivo si desea enviar</label>
+    <input type="file" name="foto" id="foto"><br>
+    
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar">
+        <input type="button" value="Botón">
+    </form> 
+
+    <script>
+        window.onunload=function(){alert('Vuelva en otro momento');}
+        
+        document.body.oncopy = function() {
+        alert('Todos los derechos reservados.');
+        return false;};
+    </script>
+</body>
+</html>
